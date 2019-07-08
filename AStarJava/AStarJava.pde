@@ -1,11 +1,8 @@
 import java.lang.Math.*;
-import interfascia.*;
 
 int screenSize = 700;
 int gridSize = 20;
 PImage img;
-GUIController c;
-IFButton b1;
 int imgX;
 int imgY;
 int rectSize = screenSize / gridSize;
@@ -23,11 +20,6 @@ void setup(){
    img = loadImage("dude.png");
    imgX = 0;
    imgY = 0;
-   c = new GUIController(this);
-   b1 = new IFButton("One", 0, 670, 50, 30);
-   b1.addActionListener(this);
-   
-   c.add(b1);
    
    for (int i = 0; i < gridSize; i++){
      for (int j = 0; j < gridSize; j++){
